@@ -1,9 +1,12 @@
+import Home from "./components/Home";
 
 function App() {
+
   return (
-    <h1 className="text-center text-5xl font-bold underline text-green-700">
-      Hello world!
-    </h1>
+    <div className="w-screen h-screen 
+    bg-gradient-to-r from-primary to-secondary">
+      <Home />
+    </div>
   );
 }
 
