@@ -10,7 +10,9 @@ module.exports = {
     }
   },
     extend: {
-
+      fontFamily: {
+        lobster: ['Lobster', 'cursive'],
+      }
     },
   plugins: [
 

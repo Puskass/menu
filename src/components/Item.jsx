@@ -2,7 +2,11 @@ import React from 'react'
 
 const Item = () => {
   return (
-    <div>Item</div>
+    <div>
+      <h3>Greek Salad with Lettuce</h3>
+      <p>Vegetables, Romaine Lettuce, Feta Cheese</p>
+      <span>8 KM</span>
+    </div>
   )
 }
 
