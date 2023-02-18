@@ -1,12 +1,11 @@
-import Home from "./components/Home";
 import Item from "./components/Item";
+import LandingPage from "./Pages/LandingPage";
 
 function App() {
 
   return (
-    <div className="w-screen h-screen 
-    bg-gradient-to-r from-primary to-secondary">
-      <Home />
+    <div>
+      <LandingPage />
       <Item />
     </div>
   );
