@@ -1,8 +1,11 @@
 import React from 'react'
+import MenuList from '../components/MenuList'
 
 const MenuPage = () => {
   return (
-    <div>MenuPage</div>
+    <div>
+        <MenuList />
+    </div>
   )
 }
 

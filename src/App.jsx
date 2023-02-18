@@ -1,12 +1,12 @@
-import Item from "./components/Item";
+import MenuItem from "./components/MenuItem";
 import LandingPage from "./Pages/LandingPage";
 
 function App() {
 
   return (
-    <div>
+    <div className="w-screen h-screen bg-gradient-to-r from-primary to-secondary ">
       <LandingPage />
-      <Item />
+      <MenuItem />
     </div>
   );
 }
