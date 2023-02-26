@@ -1,8 +1,7 @@
 import React from 'react';
-import MealDetails from '../components/MealDetails';
 import MealList from '../components/MealList';  
 
-const FoodMenu = (item) => {
+const FoodMenu = () => {
 
   return (
       <div>

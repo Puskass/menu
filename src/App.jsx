@@ -1,4 +1,3 @@
-// import PopupCard from "./components/PopupCard";
 import FoodMenu from "./Pages/FoodMenu";
 import LandingPage from "./Pages/LandingPage";
 
