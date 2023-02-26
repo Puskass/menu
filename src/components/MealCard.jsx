@@ -1,12 +1,34 @@
+import React, {useState} from "react";
+import CardDeatial from "./CardDeatial";
+
 const MealCard = ({ meal }) => {
+  const [showDetailCard, setShowDetailCard] = useState(false);
+
+  const showDetailCardHandler = () => {
+    setShowDetailCard(true)
+  }
+
+  const closeDetailCardHandler = () =>{
+    setShowDetailCard(false)
+  }
   return (
-    <div className="p-3 text-white bg-accent_orange rounded-lg cursor-pointer mb-5" >
-      <div className="flex justify-between">
+    <>
+    <div onClick={showDetailCardHandler} className="text-white bg-accent_orange p-3  mb-5 rounded-lg cursor-pointer" >
+      <div className="flex justify-between items-center">
         <h3 className="text-2xl">{meal.title}</h3>
         <span className="text-lg font-semibold">{meal.price.toFixed(2)} KM</span>
       </div>
-      <p className="">{meal.ingredients.join(', ')}</p>
+      <p>{meal.ingredients.join(', ')}</p>
     </div>
+
+    {showDetailCard &&
+    <CardDeatial 
+    title={meal.title} 
+    description={meal.description} 
+    imgUrl={meal.imgUrl}
+    onClose={closeDetailCardHandler}/>
+    }
+    </>
   );
 };
 export default MealCard;
