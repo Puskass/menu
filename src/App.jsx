@@ -1,4 +1,5 @@
-import FoodMenu from "./Pages/FoodMenu";
+import foodMenu from './data/foodMenu';
+import Menu from './components/Menu';
 import LandingPage from "./Pages/LandingPage";
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   return (
     <div className="overflow-x-hidden bg-gradient-to-r from-primary to-secondary">
       <LandingPage />
-      <FoodMenu />
+      <Menu menu={foodMenu} />
     </div>
   );
 }
