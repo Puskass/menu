@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import CardDeatial from "./CardDeatial";
+import CardDetail from "./CardDetail";
 
 const MealCard = ({ meal }) => {
   const [showDetailCard, setShowDetailCard] = useState(false);
@@ -22,7 +22,7 @@ const MealCard = ({ meal }) => {
     </div>
 
     {showDetailCard &&
-    <CardDeatial 
+    <CardDetail 
     title={meal.title} 
     description={meal.description} 
     imgUrl={meal.imgUrl}
